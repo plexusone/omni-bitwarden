@@ -2,5 +2,7 @@ github.com/bitwarden/sdk-go/v2 v2.1.0 h1:DtgklUXNA3GcP5t1eXEEefd0UY6Gv5041/+gZHD
 github.com/bitwarden/sdk-go/v2 v2.1.0/go.mod h1:6Sfb4IdZ9tnggeFj8Ty4MLkWUyC2pNlFUoAZE0Dapfw=
 github.com/gofrs/uuid v4.4.0+incompatible h1:3qXRTX8/NbyulANqlc0lchS1gqAVxRgsuW1YrTJupqA=
 github.com/gofrs/uuid v4.4.0+incompatible/go.mod h1:b2aQJv3Z4Fp6yNu3cdSllBxTCLRxnplIgP/c0N/04lM=
-github.com/plexusone/omnivault v0.3.0 h1:58dKSzhGVTO786kdL8zOkfTrqND+0qqwvsY8o6GrGd0=
-github.com/plexusone/omnivault v0.3.0/go.mod h1:rQc0Tb6IchaJeY/uB076VYKQHwyL+cwaYYdiFkuKhjA=
+github.com/grokify/oscompat v0.3.0 h1:OsZNfRRLkfShSBu8jOLwtVQLj9/gOw3UjVe//XeV5uU=
+github.com/grokify/oscompat v0.3.0/go.mod h1:Ekex/WzHaA39LNt5xbeQRASo74NEXAIqBlqdvNF2oUM=
+github.com/plexusone/omnivault v0.5.0 h1:7oZwP1KNS+XQ1ksoZoKnLS9PV0TQ93b5NEuxO0T2Hwg=
+github.com/plexusone/omnivault v0.5.0/go.mod h1:LQNyI6gTygb3ht4yLhLpHIdcOVALOTGnaO1oJn6+2KE=
