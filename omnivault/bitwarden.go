@@ -215,7 +215,7 @@ func (p *Provider) Set(ctx context.Context, path string, secret *vault.Secret) e
 }
 
 // createSecret creates a new secret in Bitwarden.
-func (p *Provider) createSecret(ctx context.Context, parsed *ParsedPath, secret *vault.Secret) error {
+func (p *Provider) createSecret(_ context.Context, parsed *ParsedPath, secret *vault.Secret) error {
 	key := parsed.SecretKey
 	value := secret.Value
 	note := ""
@@ -247,7 +247,7 @@ func (p *Provider) createSecret(ctx context.Context, parsed *ParsedPath, secret 
 }
 
 // updateSecret updates an existing secret in Bitwarden.
-func (p *Provider) updateSecret(ctx context.Context, secretID string, parsed *ParsedPath, secret *vault.Secret) error {
+func (p *Provider) updateSecret(_ context.Context, secretID string, parsed *ParsedPath, secret *vault.Secret) error {
 	key := parsed.SecretKey
 	value := secret.Value
 	note := ""
@@ -407,7 +407,7 @@ func (p *Provider) Close() error {
 }
 
 // resolveSecretID resolves a secret key to its ID within an organization.
-func (p *Provider) resolveSecretID(ctx context.Context, orgID, secretKey string) (string, error) {
+func (p *Provider) resolveSecretID(_ context.Context, orgID, secretKey string) (string, error) {
 	// Check cache first
 	p.cacheMu.RLock()
 	if orgCache, ok := p.secretCache[orgID]; ok {
