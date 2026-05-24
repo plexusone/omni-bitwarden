@@ -1,0 +1,45 @@
+{
+  "irVersion": "1.0",
+  "project": "omni-bitwarden",
+  "repository": "https://github.com/plexusone/omni-bitwarden",
+  "versioning": "semver",
+  "commitConvention": "conventional",
+  "maintainers": ["plexusone"],
+  "bots": ["dependabot[bot]"],
+  "releases": [
+    {
+      "version": "v0.1.0",
+      "date": "2026-05-24",
+      "commit": "905ddc7",
+      "highlights": [
+        { "description": "Initial release of omni-bitwarden, a Bitwarden Secrets Manager provider for omnivault" }
+      ],
+      "added": [
+        { "description": "Bitwarden Secrets Manager provider implementing `vault.Vault` interface", "commit": "5bf5612" },
+        { "description": "Full CRUD operations: read, write, delete, list secrets", "commit": "5bf5612" },
+        { "description": "Multi-field support for accessing key, value, and note fields", "commit": "5bf5612" },
+        { "description": "Flexible path formats: secret key, org/key, key/field combinations", "commit": "5bf5612" },
+        { "description": "Auto-registration for `bw://` URI scheme via register package", "commit": "697694f" },
+        { "description": "Environment variable configuration: `BW_ACCESS_TOKEN`, `BW_ORGANIZATION_ID`", "commit": "5bf5612" },
+        { "description": "Self-hosted instance support via `BW_API_URL` and `BW_IDENTITY_URL`", "commit": "5bf5612" }
+      ],
+      "documentation": [
+        { "description": "README with installation, authentication, and usage examples", "commit": "cfb546d" },
+        { "description": "Path format reference table", "commit": "cfb546d" },
+        { "description": "Capability matrix showing supported operations", "commit": "cfb546d" },
+        { "description": "Release notes for v0.1.0", "commit": "905ddc7" }
+      ],
+      "dependencies": [
+        { "description": "Bump `github.com/bitwarden/sdk-go/v2` from 2.0.0 to 2.1.0", "commit": "d823370" },
+        { "description": "Bump `github.com/plexusone/omnivault` from 0.3.0 to 0.5.0", "commit": "f519794" }
+      ],
+      "infrastructure": [
+        { "description": "GitHub Actions CI workflow for build and test", "commit": "bf85a5d" },
+        { "description": "GitHub Actions lint workflow with golangci-lint", "commit": "bf85a5d" },
+        { "description": "GitHub Actions SAST workflow with CodeQL", "commit": "bf85a5d" },
+        { "description": "golangci-lint configuration", "commit": "8744c54" },
+        { "description": "MIT license", "commit": "d2c37fb" }
+      ]
+    }
+  ]
+}
